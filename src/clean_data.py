@@ -21,7 +21,7 @@ print(f"Dropped {before - len(df):,} games under 5 minutes")
 
 keep = ["SEASON", "GAME_ID", "GAME_DATE", "PLAYER_ID", "PLAYER_NAME",
         "TEAM_ABBREVIATION", "OPPONENT", "HOME", "REST_DAYS", "BACK_TO_BACK",
-        "MIN", "FGA", "FG3A", "FTA", "REB", "AST", "TOV", "PTS"]
+        "MIN", "FGA", "FG3A", "FG3M", "FTA", "REB", "AST", "STL", "BLK", "TOV", "PTS"]
 df = df[keep]
 
 df.to_csv("data/processed/player_games_clean.csv", index=False)
